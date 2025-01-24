@@ -6,7 +6,16 @@ python3 -m pip install --upgrade --force-reinstall pip
 
 
 pip install html5lib
-pip install -r requirments
+python3 -m pip install siphash24
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+export XDG_RUNTIME_DIR=/home/kasm-user/.runtime
+mkdir -p /home/kasm-user/.runtime
+chmod 700 /home/kasm-user/.runtime
+sudo apt install clinfo
+pip uninstall pyopencl
+pip install pyopencl
+export LD_LIBRARY_PATH=/path/to/opencl/libraries:$LD_LIBRARY_PATH
+
 pip install -r requirments.txt
 
 pip install -r requirements.txt
