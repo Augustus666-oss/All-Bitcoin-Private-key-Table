@@ -1,3 +1,17 @@
+ source myenv/bin/activate
+
+python3 -m pip install --upgrade --force-reinstall pip
+
+
+
+pip install html5lib
+pip install -r requirments
+pip install -r requirments.txt
+
+pip install -r requirements.txt
+
+
+
 # All-Bitcoin-Private-key-Table
 # You must pip install the modules in the requirements.txt file if you don't have them already, for the script to run properly. 
         pip install -r requirements.txt
